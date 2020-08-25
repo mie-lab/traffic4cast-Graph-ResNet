@@ -1,0 +1,9 @@
+*.csv
+*.h5
+*.idea
+*.ipynb_checkpoints
+
+*.pyc
+
+/runs
+__pycache__

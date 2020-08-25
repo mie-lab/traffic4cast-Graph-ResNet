@@ -1,0 +1,32 @@
+name: pmlrgraphs20
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  # Created by running the following commands on Linux, macOS and Windows, then taking the common subset of dependencies.
+  # conda create -n ntds_2019 python=3.7 jupyterlab git numpy scipy matplotlib-base pandas networkx pygsp scikit-learn pytorch cpuonly dgl requests -c dglteam -c pytorch -c conda-forge -c defaults --override-channels
+  # conda env export --no-builds -n ntds_2019 > environment_linux.yml
+  - pip
+  - pandas
+  - matplotlib 
+  - scikit-learn
+  - spyder
+  - pytest
+  - jupyter
+  - networkx
+  - pytorch 
+  - torchvision
+  #- cudatoolkit=10.1
+  - cpuonly # replace cpuonly with your cuda version for GPU support
+  - future
+  - pillow
+  - tensorboard
+  - seaborn
+  - pip: 
+    - h5py
+    - torch-cluster
+    - torch-geometric
+    - torch-scatter
+    - torch-sparse
+    - torch-spline-conv
